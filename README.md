@@ -1,7 +1,5 @@
 # Log Ingestor and Query Interface
 
-# 👿 Problem
-
 >  A log ingestor system that can efficiently handle vast volumes of log data, and offer a simple interface for querying data using full-text search or specific field filters.
 > 
 
