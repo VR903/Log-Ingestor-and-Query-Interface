@@ -2,10 +2,8 @@
 
 # 👿 Problem
 
-> Develop a log ingestor system that can efficiently handle vast volumes of log data, and offer a simple interface for querying this data using full-text search or specific field filters.
+>  A log ingestor system that can efficiently handle vast volumes of log data, and offer a simple interface for querying data using full-text search or specific field filters.
 > 
-
----
 
 ---
 
@@ -226,14 +224,7 @@ curl --location 'http://localhost:3000/api/v1/log/search?startDate=2023-09-15T02
 ## 🚀Advance Features
 
 - [x]  Implement search within specific date ranges. → API support startDate and EndDate
-- [ ]  Utilize regular expressions for search → Kibana dashboard support this feature. Yet to add it in API
 - [x]  Allow combining multiple filters.
 - [x]  Provide real-time log ingestion and searching capabilities (Using near real time ingestion using kakfa and elasticsearch)
 - [x]  Implement role-based access to the query interface.
 
----
-
-# 🌕Future / Know Issues
-
-- Currently we are sending log data using HTTP request. This can act as botttneck and uses lot of resources and bandwith. Implement **file beat** to send logs to log ingestor.
-- Add validations and add test cases for the application. So the code is more robust.
